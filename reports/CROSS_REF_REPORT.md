@@ -1,15 +1,15 @@
 # Cross-Reference Report
 
-Generated: 2026-10-13T19:48:14Z
+Generated: 2026-10-13T23:39:39Z
 
-AT command index: **394** unique commands
+AT command index: **365** unique commands
 
 | Rule | OK | Mismatch | Invalid |
 |---|---|---|---|
-| dat_02 related_command -> dat_01 | 16 | 0 | 0 |
+| dat_02 related_command -> dat_01 | 97 | 0 | 0 |
 | dat_04 related_command -> dat_01 | 0 | 0 | 0 |
-| dat_05 related_commands -> dat_01 | 40 | 0 | 1 |
-| dat_06 command -> dat_01 | 26 | 0 | 2 |
+| dat_05 related_commands -> dat_01 | 35 | 5 | 1 |
+| dat_06 command -> dat_01 | 25 | 1 | 2 |
 | dat_09 command -> dat_01 | 14 | 0 | 0 |
 | dat_10 command -> dat_01 | 21 | 3 | 0 |
 | dat_11 command -> dat_01 | 20 | 18 | 0 |
@@ -18,7 +18,7 @@ AT command index: **394** unique commands
 | dat_15 command -> dat_01 | 0 | 0 | 0 |
 | dat_17 command -> dat_01 | 0 | 9 | 0 |
 
-**Totals** — OK: 156, mismatch: 34, invalid: 3
+**Totals** — OK: 231, mismatch: 40, invalid: 3
 
 Interpretation:
 - **OK**: reference resolves to an entry present in dat_01.

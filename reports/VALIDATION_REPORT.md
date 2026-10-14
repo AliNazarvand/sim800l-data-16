@@ -1,12 +1,12 @@
 # Validation Report
 
-Generated: 2026-10-13T19:48:09Z
+Generated: 2026-10-14T00:20:07Z
 Dependencies available: True
-## dat_01_at_command: OK (394 records)
-## dat_02_urc: OK (18 records)
-## dat_03_error_code: OK (255 records)
-## dat_04_timing_timeout: 1 errors (99 records)
-  - [L1] Record 11: None is not of type 'string'
+## dat_01_at_command: OK (365 records)
+## dat_02_urc: OK (95 records)
+## dat_03_error_code: 1 errors (1 records)
+  - [L1] Record 0: None is not of type 'string'
+## dat_04_timing_timeout: OK (5 records)
 ## dat_05_state_machine: OK (31 records)
 ## dat_06_init_sequence: 30 errors (35 records)
   - [L1] Record 0: None is not of type 'integer'
@@ -63,7 +63,8 @@ Dependencies available: True
   - [L1] Record 8: None is not of type 'string'
   - [L1] Record 9: None is not of type 'string'
 ## dat_14_operator_apn: OK (52 records)
-## dat_15_power_management: OK (113 records)
+## dat_15_power_management: 1 errors (1 records)
+  - [L1] Record 0: None is not of type 'string'
 ## dat_16_board_evb: 1 errors (1 records)
   - [L1] Record 0: None is not of type 'string'
 ## dat_17_certificate_key_store: OK (9 records)
@@ -74,10 +75,10 @@ Dependencies available: True
 
 | Dataset | Records | Errors | Schema |
 |---|---|---|---|
-| dat_01_at_command | 394 | 0 | yes |
-| dat_02_urc | 18 | 0 | yes |
-| dat_03_error_code | 255 | 0 | yes |
-| dat_04_timing_timeout | 99 | 1 | yes |
+| dat_01_at_command | 365 | 0 | yes |
+| dat_02_urc | 95 | 0 | yes |
+| dat_03_error_code | 1 | 1 | yes |
+| dat_04_timing_timeout | 5 | 0 | yes |
 | dat_05_state_machine | 31 | 0 | yes |
 | dat_06_init_sequence | 35 | 30 | yes |
 | dat_07_hardware_reference | 77 | 0 | yes |
@@ -88,10 +89,10 @@ Dependencies available: True
 | dat_12_audio | 13 | 1 | yes |
 | dat_13_sim_management | 10 | 10 | yes |
 | dat_14_operator_apn | 52 | 0 | yes |
-| dat_15_power_management | 113 | 0 | yes |
+| dat_15_power_management | 1 | 1 | yes |
 | dat_16_board_evb | 1 | 1 | yes |
 | dat_17_certificate_key_store | 9 | 0 | yes |
 | dat_18_certification | 1 | 1 | yes |
 
-**Total records: 1185**
-**Total errors: 59**
+**Total records: 773**
+**Total errors: 60**

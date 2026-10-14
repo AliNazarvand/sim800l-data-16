@@ -1,0 +1,202 @@
+- id: dat_02_0001
+  category: URC
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '39'
+    section: URC Section
+    quote: AT+CREG <n> Y
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: ''
+  tags: []
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-11T17:47:33Z'
+  urc_string: +CREG
+  trigger_event: result code
+  related_command: AT+CREG
+  related_state: ''
+  format: (list of supported <n>s)
+  parameters:
+  - name: n
+    description: s)
+  - name: stat
+    description: which shows whether the network has currently indicated the registration
+  - name: lac
+    description: and
+  - name: ci
+    description: are returned
+  - name: err
+    description: Write Command
+  examples:
+  - (list of supported <n>s)
+  timing: ''
+  suppression_method: ''
+  coverage_estimate: high
+  related_urcs:
+  - +CME
+  - +CREG
+- id: dat_02_0002
+  category: URC
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '226'
+    section: URC Section
+    quote: '+FTPGETNAME: <value>'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: ''
+  tags: []
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-11T17:47:33Z'
+  urc_string: +FTPGET
+  trigger_event: that no data can be read
+  related_command: AT+FTPGET
+  related_state: ''
+  format: 1,1
+  parameters:
+  - name: error
+    description: 'If mode is 2:'
+  - name: cnflength
+    description: 012345678…
+  - name: err
+    description: Write Command
+  - name: mode
+    description: 1  For opening FTP get session
+  - name: reqlength
+    description: Requested number of data bytes (1-1460)to be read
+  - name: length
+    description: . 0 indicates that no data can be read.
+  examples:
+  - 1,1
+  timing: ''
+  suppression_method: ''
+  coverage_estimate: high
+  related_urcs:
+  - +CME
+  - +FTPGET
+- id: dat_02_0003
+  category: URC
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '222'
+    section: URC Section
+    quote: '+FTPPUTOPT: <value>'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: ''
+  tags: []
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-11T17:47:33Z'
+  urc_string: +FTPPUT
+  trigger_event: ''
+  related_command: AT+FTPPUT
+  related_state: ''
+  format: 1,1,<maxlength>
+  parameters:
+  - name: maxlength
+    description: 'If mode is 1 and it is a failed FTP get session:'
+  - name: error
+    description: If mode is 2 and
+  - name: reqlength
+    description: is not 0
+  - name: cnflength
+    description: ……       //Input data
+  - name: err
+    description: Write Command
+  - name: mode
+    description: 1  For opening FTP put session
+  examples:
+  - 1,1,<maxlength>
+  timing: ''
+  suppression_method: ''
+  coverage_estimate: high
+  related_urcs:
+  - +CME
+  - +FTPGET
+  - +FTPPUT
+- id: dat_02_0004
+  category: URC
+  source:
+    name: SIM800 Series AT Command Manual
+    version: V1.01
+    date: '2013-09-15'
+    page: '215'
+    section: URC Section
+    quote: '+HTTPACTION: (0-2)'
+  source_type: primary
+  confidence: 0.7
+  status: partial
+  conflicts: []
+  notes: ''
+  tags: []
+  applicable_models:
+  - SIM800L
+  created_at: '2026-10-10T17:30:26Z'
+  updated_at: '2026-10-11T17:47:33Z'
+  urc_string: +HTTPACTION
+  trigger_event: Result Code
+  related_command: AT+HTTPACTION
+  related_state: ''
+  format: (0-2)
+  parameters:
+  - name: err
+    description: Unsolicited Result Code
+  examples:
+  - (0-2)
+  timing: ''
+  suppression_method: ''
+  coverage_estimate: high
+  related_urcs:
+  - +CME
+  - +HTTPACTI
+  - +HTTPACTION
+- id: dat_02_0005
+  category: URC
+  urc_string: '+PDP: DEACT'
+  trigger_event: 'If "+PDP: DEACT" urc is reported which means the gprs is released
+    by the'
+  related_command: null
+  related_state: null
+  format: 'If "+PDP: DEACT" urc is reported which means the gprs is released by the'
+  parameters: []
+  examples:
+  - 'If "+PDP: DEACT" urc is reported which means the gprs is released by the'
+  timing: null
+  suppression_method: null
+  source:
+    name: SIM800 Series_AT Command Manual
+    version: V1.01
+    date: '2018-05-15'
+    page: '188'
+    section: URC Section
+    quote: 'If "+PDP: DEACT" urc is reported which means the gprs is released by the'
+  source_type: primary
+  confidence: 0.6
+  status: partial
+  conflicts: []
+  notes: Extracted from AT Manual V1.01 (broad retry).
+  applicable_models:
+  - SIM800L
+  tags:
+  - urc
+  - extracted
+  created_at: '2026-10-11T16:40:35Z'
+  updated_at: '2026-10-11T17:32:27Z'
